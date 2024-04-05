@@ -16,3 +16,4 @@ tmp/
 CMakeUserPresets.json
 CMakeSettings.json
 nohup.out
+worlds/.*
