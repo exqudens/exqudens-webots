@@ -11,7 +11,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation -0.27875532180772467 0.0038808946440789943 0.9603543144176703 3.1148537068443396
-  position 1.8486147712078262 -0.19511901148425054 1.243956061757776
+  position 0.9630269078678675 -0.1704555218968674 0.6823316278554359
 }
 TexturedBackground {
 }
@@ -49,7 +49,13 @@ DEF BALL Solid {
   children [
     Shape {
       appearance PBRAppearance {
-        roughness 1
+        baseColor 0.8 0.8 0.8
+        baseColorMap ImageTexture {
+          url [
+            "../src/main/resources/jpg/red_brick_wall.jpg"
+          ]
+        }
+        roughness 0.5
         metalness 0
       }
       geometry DEF BALL_GEOMETRY Sphere {
@@ -67,8 +73,8 @@ DEF WALL_1 Solid {
   children [
     DEF WALL_SHAPE Shape {
       appearance PBRAppearance {
-        baseColor 0.8 0.8 0.8
-        roughness 1
+        baseColor 0.333333 0.666667 1
+        roughness 0.5
         metalness 0
       }
       geometry Box {
